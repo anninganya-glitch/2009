@@ -2,7 +2,7 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <title>我的秘密花园 - 2009年3月2日</title>
+    <title>小鱼的秘密花园 - 2009年3月2日</title>
     <style>
         * {
             margin: 0;
@@ -86,7 +86,7 @@
             padding: 20px;
             margin-bottom: 20px;
             position: relative;
-            z-index: 5;
+            z-index: 10;
         }
         
         .header {
@@ -144,6 +144,7 @@
             margin-bottom: 30px;
             padding-bottom: 20px;
             border-bottom: 1px dotted #aaddaa;
+            position: relative;
         }
         
         .post-title {
@@ -164,6 +165,7 @@
         .image-container {
             text-align: center;
             margin: 15px 0;
+            position: relative;
         }
         
         .broken-image {
@@ -254,10 +256,10 @@
             border: 1px solid #669966;
         }
         
-        /* 贴纸样式 */
+        /* 贴纸样式 - 修改为绝对定位 */
         .sticker {
-            position: fixed;
-            z-index: 10;
+            position: absolute;
+            z-index: 5;
             pointer-events: none;
         }
         
@@ -270,46 +272,6 @@
     </style>
 </head>
 <body>
-    <!-- 原有贴纸 -->
-    <a href="https://www.glitter-graphics.com" class="sticker" style="top: 5%; left: 2%;">
-        <img src="http://dl.glitter-graphics.net/pub/641/641931vaky6f243l.gif" width=94 height=92 border=0>
-    </a>
-    <a href="https://www.glitter-graphics.com" class="sticker" style="top: 12%; right: 1%;">
-        <img src="http://dl.glitter-graphics.net/pub/725/725451hqye09hovg.gif" width=110 height=80 border=0>
-    </a>
-    <a href="https://www.glitter-graphics.com" class="sticker" style="bottom: 15%; left: 1%;">
-        <img src="http://dl2.glitter-graphics.net/pub/948/948532zr96alyx9q.gif" width=55 height=57 border=0>
-    </a>
-    <a href="https://www.glitter-graphics.com" class="sticker" style="top: 20%; left: 12%;">
-        <img src="http://dl3.glitter-graphics.net/pub/437/437843yn4bmybu6n.gif" width=77 height=113 border=0>
-    </a>
-    <a href="https://www.glitter-graphics.com" class="sticker" style="bottom: 10%; right: 8%;">
-        <img src="http://dl8.glitter-graphics.net/pub/39/39368n1b2x3prdz.gif" width=83 height=49 border=0>
-    </a>
-    <a href="https://www.glitter-graphics.com" class="sticker" style="top: 55%; right: 3%;">
-        <img src="http://dl10.glitter-graphics.net/pub/459/459830qyqjkq81to.gif" width=50 height=50 border=0>
-    </a>
-    <a href="https://www.glitter-graphics.com" class="sticker" style="bottom: 5%; right: 15%;">
-        <img src="http://dl2.glitter-graphics.net/pub/544/544072g5obtyyvgi.gif" width=78 height=112 border=0>
-    </a>
-    
-    <!-- 新增贴纸 -->
-    <a href="https://www.glitter-graphics.com" class="sticker" style="top: 35%; left: 3%;">
-        <img src="http://dl3.glitter-graphics.net/pub/705/705163xedbl2b3c3.gif" width=106 height=111 border=0>
-    </a>
-    <a href="https://www.glitter-graphics.com" class="sticker" style="bottom: 25%; right: 2%;">
-        <img src="http://dl8.glitter-graphics.net/pub/1299/1299018ilh3uxizie.gif" width=230 height=283 border=0>
-    </a>
-    <a href="https://www.glitter-graphics.com" class="sticker" style="top: 45%; left: 8%;">
-        <img src="http://dl2.glitter-graphics.net/pub/1726/1726182u7hov42w2s.gif" width=187 height=198 border=0>
-    </a>
-    <a href="https://www.glitter-graphics.com" class="sticker" style="top: 65%; right: 12%;">
-        <img src="http://dl.glitter-graphics.net/pub/919/919051dteqa74uqz.gif" width=110 height=110 border=0>
-    </a>
-    <a href="https://www.glitter-graphics.com" class="sticker" style="bottom: 35%; left: 6%;">
-        <img src="http://dl6.glitter-graphics.net/pub/1197/1197916dg40xkg8n1.gif" width=87 height=57 border=0>
-    </a>
-    
     <!-- 时光机导航栏 -->
     <div class="wayback-nav">
         <div class="wayback-years">
@@ -327,7 +289,7 @@
     
     <div class="container">
         <div class="header">
-            <h1 class="blog-title">★我的秘密花园★</h1>
+            <h1 class="blog-title">★小鱼的秘密花园★</h1>
             <div class="subtitle">~*~ 欢迎来到我的小天地 ~*~</div>
             <div class="date">最后更新: 2009年3月2日</div>
         </div>
@@ -344,19 +306,35 @@
             <div class="post">
                 <h2 class="post-title">♪ 今天是个好天气 ♪</h2>
                 <div class="post-content">
-                    <p>今天<span class="pink-text">天气</span>好好哦<span class="symbol">☼</span> 阳光<span class="orange-text">暖暖</span>的，我穿了我最<span class="blue-text">爱</span>的粉红色<span class="pink-text">裙子</span>去上学。</p>
+                    <p>今天<span class="pink-text">天气</span>好好哦<span class="symbol">☼</span> 阳光<span class="orange-text">暖暖</span>的，我穿了我最<span class="blue-text">稀饭</span>的粉红色<span class="pink-text">裙裙</span>去上学。</p>
                     
-                    <p>数学课好<span class="purple-text">无聊</span>哦，我一直<span class="green-text">偷偷</span>在下面画小<span class="orange-text">花花</span>，被老师<span class="pink-text">发现</span>了，她<span class="blue-text">瞪</span>了我一眼，但是<span class="green-text">没有</span>说我，嘿嘿。</p>
+                    <p>数学课好<span class="purple-text">无聊</span>哦，我一直<span class="green-text">偷偷</span>在下面画小<span class="orange-text">花花</span>，被老师<span class="pink-text">发现</span>了，她<span class="blue-text">瞪</span>了我一眼，但是<span class="green-text">米有</span>说我，嘿嘿。</p>
                     
-                    <p>放学后和<span class="purple-text">陈佳怡</span>一起去买<span class="orange-text">冰淇淋</span>吃，我选了<span class="pink-text">草莓</span>味的，她选了<span class="blue-text">巧克力</span>味的，我们<span class="green-text">交换</span>着吃，好好吃呀<span class="symbol">♡</span></p>
+                    <p>放学后和<span class="purple-text">小美</span>一起去买<span class="orange-text">冰淇淋</span>吃，我选了<span class="pink-text">草莓</span>味的，她选了<span class="blue-text">巧克力</span>味的，我们<span class="green-text">交换</span>着吃，好好吃呀<span class="symbol">♡</span></p>
                     
                     <div class="image-container">
+                        <!-- 图片左侧的贴纸 -->
+                        <a href="https://www.glitter-graphics.com" class="sticker" style="left: -80px; top: 10px;">
+                            <img src="http://dl.glitter-graphics.net/pub/641/641931vaky6f243l.gif" width=94 height=92 border=0>
+                        </a>
+                        <a href="https://www.glitter-graphics.com" class="sticker" style="left: -100px; top: 120px;">
+                            <img src="http://dl2.glitter-graphics.net/pub/948/948532zr96alyx9q.gif" width=55 height=57 border=0>
+                        </a>
+                        
                         <div class="broken-image" style="background-color: #ffcccc;">
                             <div class="broken-image-placeholder">
                                 图片加载失败<br>icecream.jpg
                             </div>
-                            <div class="image-caption">我和佳怡吃的冰淇淋 <span class="symbol">♬</span></div>
+                            <div class="image-caption">我和小美吃的冰淇淋 <span class="symbol">♬</span></div>
                         </div>
+                        
+                        <!-- 图片右侧的贴纸 -->
+                        <a href="https://www.glitter-graphics.com" class="sticker" style="right: -80px; top: 30px;">
+                            <img src="http://dl3.glitter-graphics.net/pub/705/705163xedbl2b3c3.gif" width=106 height=111 border=0>
+                        </a>
+                        <a href="https://www.glitter-graphics.com" class="sticker" style="right: -110px; top: 150px;">
+                            <img src="http://dl.glitter-graphics.net/pub/919/919051dteqa74uqz.gif" width=110 height=110 border=0>
+                        </a>
                     </div>
                     
                     <p>回家路上看到一只<span class="green-text">可爱</span>的小<span class="orange-text">猫猫</span>，它一直<span class="blue-text">跟着</span>我们走，我好想<span class="pink-text">养</span>它，但是妈妈<span class="purple-text">不让</span>，她说我会把家里弄得<span class="orange-text">乱七八槽</span>的。</p>
@@ -371,12 +349,28 @@
                     <p>我画的是<span class="orange-text">海底世界</span>，有<span class="blue-text">各种颜色</span>的小鱼，还有<span class="purple-text">海草</span>和<span class="green-text">珊瑚</span>，我还画了一个<span class="pink-text">美人鱼</span>，就是我<span class="symbol">♡</span></p>
                     
                     <div class="image-container">
+                        <!-- 图片左侧的贴纸 -->
+                        <a href="https://www.glitter-graphics.com" class="sticker" style="left: -90px; top: 20px;">
+                            <img src="http://dl3.glitter-graphics.net/pub/437/437843yn4bmybu6n.gif" width=77 height=113 border=0>
+                        </a>
+                        <a href="https://www.glitter-graphics.com" class="sticker" style="left: -70px; top: 150px;">
+                            <img src="http://dl6.glitter-graphics.net/pub/1197/1197916dg40xkg8n1.gif" width=87 height=57 border=0>
+                        </a>
+                        
                         <div class="broken-image" style="background-color: #ccccff;">
                             <div class="broken-image-placeholder">
                                 图片加载失败<br>mydrawing.jpg
                             </div>
                             <div class="image-caption">我画的海底世界 <span class="symbol">♩</span></div>
                         </div>
+                        
+                        <!-- 图片右侧的贴纸 -->
+                        <a href="https://www.glitter-graphics.com" class="sticker" style="right: -100px; top: 10px;">
+                            <img src="http://dl2.glitter-graphics.net/pub/1726/1726182u7hov42w2s.gif" width=187 height=198 border=0>
+                        </a>
+                        <a href="https://www.glitter-graphics.com" class="sticker" style="right: -80px; top: 130px;">
+                            <img src="http://dl10.glitter-graphics.net/pub/459/459830qyqjkq81to.gif" width=50 height=50 border=0>
+                        </a>
                     </div>
                     
                     <p>老师把我的画<span class="blue-text">贴</span>在教室的<span class="green-text">墙上</span>了，所有同学都能<span class="pink-text">看到</span>，我好<span class="orange-text">自豪</span>呀<span class="symbol">♪</span> 放学后我<span class="purple-text">特意</span>叫妈妈来看，她也说我画得<span class="blue-text">很好</span>。</p>
@@ -390,15 +384,31 @@
                 <div class="post-content">
                     <p>这个<span class="blue-text">周末</span>爸爸说要带我去<span class="green-text">动物园</span>玩<span class="symbol">☺</span> 我好<span class="pink-text">期待</span>呀！我最喜欢看<span class="orange-text">大熊猫</span>了，它们<span class="purple-text">胖乎乎</span>的好可爱。</p>
                     
-                    <p>我还想去看<span class="green-text">长颈鹿</span>，它们的<span class="blue-text">脖子</span>好长好长，可以吃到<span class="orange-text">高高</span>的树叶。</p>
+                    <p>我还想去看<span class="green-text">长颈鹿</span>，它们的<span class="blue-text">脖子</span>好长好长，可以吃到<span class="orange-text">高高</span>的树叶。上次去的时候我还<span class="pink-text">喂</span>了长颈鹿，它的<span class="purple-text">舌头</span>是紫色的，好<span class="green-text">奇怪</span>呀。</p>
                     
                     <div class="image-container">
+                        <!-- 图片左侧的贴纸 -->
+                        <a href="https://www.glitter-graphics.com" class="sticker" style="left: -70px; top: 30px;">
+                            <img src="http://dl.glitter-graphics.net/pub/725/725451hqye09hovg.gif" width=110 height=80 border=0>
+                        </a>
+                        <a href="https://www.glitter-graphics.com" class="sticker" style="left: -90px; top: 140px;">
+                            <img src="http://dl8.glitter-graphics.net/pub/39/39368n1b2x3prdz.gif" width=83 height=49 border=0>
+                        </a>
+                        
                         <div class="broken-image" style="background-color: #ffffcc;">
                             <div class="broken-image-placeholder">
                                 图片加载失败<br>zoo.jpg
                             </div>
                             <div class="image-caption">上次在动物园拍的照片 <span class="symbol">♫</span></div>
                         </div>
+                        
+                        <!-- 图片右侧的贴纸 -->
+                        <a href="https://www.glitter-graphics.com" class="sticker" style="right: -90px; top: 20px;">
+                            <img src="http://dl2.glitter-graphics.net/pub/544/544072g5obtyyvgi.gif" width=78 height=112 border=0>
+                        </a>
+                        <a href="https://www.glitter-graphics.com" class="sticker" style="right: -120px; top: 150px;">
+                            <img src="http://dl8.glitter-graphics.net/pub/1299/1299018ilh3uxizie.gif" width=230 height=283 border=0>
+                        </a>
                     </div>
                     
                     <p>妈妈说如果我这周<span class="blue-text">表现好</span>，就给我买一个<span class="pink-text">冰淇凌</span>，我一定要<span class="green-text">努力</span>做个<span class="orange-text">乖宝宝</span>！</p>
